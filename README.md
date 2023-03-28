@@ -20,7 +20,7 @@ Several programming languages can be used to connect via API.
 * Raspberry Pi 4B board <img align="center" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/raspberrypi/raspberrypi-original.svg">
 * 2x NEMA-23 Stepper Motors
 * 2x 12V/5A battery
-* USB control  <img align="center" height="40" width="40" src="https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/png/control.png">
+* Wireless Gamepad F710  <img align="center" height="40" width="40" src="https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/png/control.png">
 
 # Programming Example
 ## Control Pallet - [Control_Pallet.py](https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/Controle_Pallet.py)
