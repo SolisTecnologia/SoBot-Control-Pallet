@@ -1,5 +1,5 @@
 # Solis Robot - SoBot
-![](https://github.com/SolisTecnologia/SoBot-Control_Pallet_/blob/master/png/SoBotPallet.png)
+![](https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/png/SoBotPallet.png)
 
 # Introduction
 
@@ -20,10 +20,10 @@ Several programming languages can be used to connect via API.
 * Raspberry Pi 4B board <img align="center" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/raspberrypi/raspberrypi-original.svg">
 * 2x NEMA-23 Stepper Motors
 * 2x 12V/5A battery
-* USB control  <img align="center" height="40" width="40" src="https://github.com/SolisTecnologia/SoBot-Control_Pallet/blob/master/png/control.png">
+* USB control  <img align="center" height="40" width="40" src="https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/png/control.png">
 
 # Programming Example
-## Control Pallet - [Control_Pallet.py](https://github.com/SolisTecnologia/SoBot-Control_Pallet/blob/master/Control_Pallety.py)
+## Control Pallet - [Control_Pallet.py](https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/Controle_Pallet.py)
 Programming example to control the "SoBot" and the lift with Pallet using the Logitech F710 controller.  
   
 The Elevator is control with R2 button to up and L2 button to down.  
