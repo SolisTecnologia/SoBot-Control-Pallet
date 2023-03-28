@@ -48,22 +48,22 @@ The ''serial'' library for serial/usb Raspberry connection with the robot contro
 The commands used in this example to control SoBot are continuous movement commands, as follows:
 
 ~~~python
-serialUSB.write(b"MT0 MC AT100 DT100 V2") # Parameter settings for continuous mode
-serialUSB.write(b"MT0 ME1")               # Enable continuous movement
-serialUSB.write(b"MT0 ME0")               # Disable continuous movement
-serialUSB.write(b"MT0 ML")                # Move left
-serialUSB.write(b"MT0 MR")                # Move right
-serialUSB.write(b"MT0 MB")                # Move backward
-serialUSB.write(b"MT0 MF")                # Move Forward
-serialUSB.write(b"MT0 MP")                # Pause movement
+usb.write(b"MT0 MC AT100 DT100 V2") # Parameter settings for continuous mode
+usb.write(b"MT0 ME1")               # Enable continuous movement
+usb.write(b"MT0 ME0")               # Disable continuous movement
+usb.write(b"MT0 ML")                # Move left
+usb.write(b"MT0 MR")                # Move right
+usb.write(b"MT0 MB")                # Move backward
+usb.write(b"MT0 MF")                # Move Forward
+usb.write(b"MT0 MP")                # Pause movement
 ~~~
 
 To control the elevator module, the following commands are used:
 
 ~~~python
-serialUSB.write(b"EL DN")	    # Move elevator down
-serialUSB.write(b"EL UP")	    # Move elevator up
-serialUSB.write(b"EL ST")	    # Pause the elevator
+usb.write(b"EL DN")	    # Move elevator down
+usb.write(b"EL UP")	    # Move elevator up
+usb.write(b"EL ST")	    # Pause the elevator
 ~~~
 
 For more information about the commands used, check the Robot Commands Reference Guide.
