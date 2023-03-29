@@ -45,10 +45,22 @@ The ''serial'' library for serial/usb Raspberry connection with the robot contro
 
 ### Code Description
 
+Commands used to configure wheel parameters and motion proportional gain, as follows:
+
+~~~python
+# Configure wheel parametres
+usb.write(b"WP MT1 WD99,84")
+usb.write(b"WP MT2 WD99,54")
+usb.write(b"WP DW264,95")
+# Set the motion proportional gain
+usb.write(b"PG SO2,3 CA3,22 DF6,11 RI-6")
+~~~
+
 The commands used in this example to control SoBot are continuous movement commands, as follows:
 
 ~~~python
-usb.write(b"MT0 MC AT100 DT100 V2") # Parameter settings for continuous mode
+usb.write(b"MT0 MC MD0 AT800 DT800 V8")         # Configure continuous mode with curve on the same axis
+usb.write(b"MT0 MC MD1 RI100 AT800 DT800 V8")   # Configure continuous mode with differential curve
 usb.write(b"MT0 ME1")               # Enable continuous movement
 usb.write(b"MT0 ME0")               # Disable continuous movement
 usb.write(b"MT0 ML")                # Move left
@@ -66,6 +78,12 @@ usb.write(b"EL UP")	    # Move elevator up
 usb.write(b"EL ST")	    # Pause the elevator
 ~~~
 
+Commands are also used to control the lighting of the LED tape as follows:
+
+~~~python
+usb.write(b"LT E1 RD0 GR0 BL100")   # Turn on Led Tap
+usb.write(b"LT E0")                 # Turn off Led Tap
+~~~
 For more information about the commands used, check the Robot Commands Reference Guide.
 
 ### Flowchart
