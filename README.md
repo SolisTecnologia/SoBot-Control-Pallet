@@ -70,7 +70,7 @@ For more information about the commands used, check the Robot Commands Reference
 
 ### Flowchart
 
-
+![](https://github.com/SolisTecnologia/SoBot-Control-Pallet/blob/main/png/Flowchart_Control_Pallet.png)
 
 # Reference Link
 [SolisTecnologia website](https://solistecnologia.com/produtos/robotsingle)
