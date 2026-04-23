@@ -47,7 +47,7 @@ usb.write(b"WP DW264,95")
 usb.write(b"PG SO2,3 CA3,22 DF6,11 RI-6")
 
 # Configure operating parametres in continuous mode
-usb.write(b"MT0 MC MD0 AT100 DT100 V8")
+usb.write(b"MT0 MC MD0 AT1000 DT1000 V6")
 
 while True:
     
@@ -93,13 +93,13 @@ while True:
             elif event.code == "BTN_TR" and event.state == 1:
                 print("Botão RB pressionado")
                 # Configure continuous mode with curve on the same axis
-                usb.write(b"MT0 MC MD0 AT100 DT100 V8")
+                usb.write(b"MT0 MC MD0 AT1000 DT1000 V6")
 
             # Check if the event code is "BTN_TL" in state 1
             elif event.code == "BTN_TL" and event.state == 1:
                 print("Botão LB pressionado")
                 # Configure continuous mode with differential curve
-                usb.write(b"MT0 MC MD1 RI100 AT100 DT100 V8")
+                usb.write(b"MT0 MC MD1 RI100 AT1000 DT1000 V6")
 
         # Checks if it is event of type "Absolute"
         if event.ev_type == "Absolute":
